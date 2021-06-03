@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import ReactStars from "react-rating-stars-component";
 
 const ProductImageCarosel = ({data}) => {
     let images = data.images
@@ -11,6 +12,14 @@ const ProductImageCarosel = ({data}) => {
         <>
             <div className='display-image'>
                 <img src={selectedImg} alt={data.name} />
+                <div className='product-rating'>
+                    <ReactStars
+                        size={30}
+                        value={4}
+                        edit={false}
+                    />
+                </div>
+                
             </div>
             <div className='image-grid-container'>
                 <div className='image-grid'>
