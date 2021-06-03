@@ -1,23 +1,29 @@
 import React from 'react'
 import ProductImageCarosel from './ProductImageCarosel'
-import {PRODUCT_DATA} from '../shared/data'
 import ProductDescription from './ProductDescription'
+import { connect } from 'react-redux'
 
-const ProductView = () => {
+const ProductView = ({ data }) => {
     return(
         <div className='product-view-main'>
             <div className='product-image-carosel'>
                 <ProductImageCarosel 
-                    data={PRODUCT_DATA}
+                    data={data}
                 />
             </div>
             <div className='product-description'>
                 <ProductDescription 
-                    data={PRODUCT_DATA}
+                    data={data}
                 />
             </div>
         </div>
     )
 }
 
-export default ProductView
+const mapStateToProps = (state) => {
+    return {
+        data: state.data,
+    }
+}
+
+export default connect(mapStateToProps)(ProductView)
