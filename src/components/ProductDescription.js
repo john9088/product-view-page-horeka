@@ -4,8 +4,8 @@ const ProductDescription = ({data}) => {
     return(
         <>
             <div className='product-heading'>
-                <h3 style={{fontSize:"2vw"}}>{data.name}</h3>
-                <p style={{fontSize:"1vw"}}>{data.description}</p>
+                <h3 style={{fontSize:"2rem"}}>{data.name}</h3>
+                <p style={{fontSize:"1rem"}}>{data.description}</p>
             </div>
             <table className='product-description-table' >
                 <tbody>

@@ -19,7 +19,7 @@ const ProductImageCarosel = ({data}) => {
                             key={index} 
                             src={i} 
                             alt={'Name'}
-                            onClick={(i) => changeImg(i)}
+                            onMouseEnter={(i) => changeImg(i)}
                         />
                     ))} 
                 </div>
