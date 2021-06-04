@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ReactStars from "react-rating-stars-component";
+import ReactStars from "../components/react-stars";
 
 const ProductImageCarosel = ({data}) => {
     let images = data.images
@@ -8,15 +8,19 @@ const ProductImageCarosel = ({data}) => {
         let src = img.target.src
         setSelectedImg(src)
     }
-    return(
+    
+    let windiwWidth = window.innerWidth
+    console.log(windiwWidth)
+    return (
         <>
             <div className='display-image'>
                 <img src={selectedImg} alt={data.name} />
                 <div className='product-rating'>
                     <ReactStars
-                        size={30}
-                        value={4}
+                        size={1}
+                        value={data.starRating}
                         edit={false}
+                        isHalf={ true }
                     />
                 </div>
                 

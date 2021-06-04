@@ -15,5 +15,6 @@ export const PRODUCT_DATA =
     ingredients:'A, B, C, D',
     dimensions:'100*50*50',
     nutririonalInfo:['a','b','c','d'],
-    vat:'4%'
+    vat: '4%',
+    starRating:3.5
 };

@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\components"
+    "\\src\\components",
+    "\\src\\customCss",
+    "\\src\\redux",
+    "\\src\\shared"
   ],
-  "SelectedNode": "\\src\\components\\ProductDescription.js",
+  "SelectedNode": "\\src\\customCss\\main.css",
   "PreviewInSolutionExplorer": false
 }
