@@ -54,16 +54,17 @@
 }
 
 .image-grid {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: auto auto auto auto auto;
-  grid-column-gap:0.25vw
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 0.25vw
 }
 
 .image-grid img {
   height: 8vh;
   border: 2px solid #dadada;
   border-radius: 7px;
+  margin: 0 auto
 }
 
 .product-heading {
