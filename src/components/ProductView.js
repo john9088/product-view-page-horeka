@@ -6,11 +6,13 @@ import { connect } from 'react-redux'
 const ProductView = ({ data }) => {
     return(
         <div className='product-view-main'>
+            {/*For image gallery*/}
             <div className='product-image-carosel'>
                 <ProductImageCarosel 
                     data={data}
                 />
             </div>
+            {/*For product description*/}
             <div className='product-description'>
                 <ProductDescription 
                     data={data}

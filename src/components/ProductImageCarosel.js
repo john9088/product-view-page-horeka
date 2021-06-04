@@ -15,6 +15,7 @@ const ProductImageCarosel = ({data}) => {
         <>
             <div className='display-image'>
                 <img src={selectedImg} alt={data.name} />
+                {/*To update star rating change starRating in shared>data.js*/}
                 <div className='product-rating'>
                     <ReactStars
                         size={1}
