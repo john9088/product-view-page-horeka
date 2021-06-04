@@ -7,10 +7,7 @@ const ProductImageCarosel = ({data}) => {
     const changeImg = (img) => {
         let src = img.target.src
         setSelectedImg(src)
-    }
-    
-    let windiwWidth = window.innerWidth
-    console.log(windiwWidth)
+    }   
     return (
         <>
             <div className='display-image'>
