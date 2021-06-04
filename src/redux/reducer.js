@@ -6,7 +6,7 @@ export const initialState = {
 };
 
 export const Reducer = (state = initialState, action) => {
-    //if (action.type === 'productView/CHANGE_PRODUCT')
-    //    return {...state, data:action.payload}
+    if (action.type === 'productView/CHANGE_PRODUCT')
+        return {...state, data:action.payload}
     return state
 }
