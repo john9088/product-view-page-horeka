@@ -25,7 +25,6 @@ export default function Star(props) {
     const {
         color,
         activeColor,
-        size,
         char,
         isHalf,
         edit,

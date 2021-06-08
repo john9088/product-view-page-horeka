@@ -24,7 +24,12 @@ const ProductImageCarosel = ({data}) => {
     return (
         <>
             <div className='display-image'>
-                <img src={tempImg === null ? selectedImg : tempImg} alt={data.name} />
+                <img 
+                    src={tempImg === null ? selectedImg : tempImg} 
+                    alt={data.name} 
+                    width="600" 
+                    height="400"
+                />
                 {/*To update star rating change starRating in shared>data.js*/}
                 <div className='product-rating'>
                     <ReactStars
@@ -43,6 +48,8 @@ const ProductImageCarosel = ({data}) => {
                             key={index} 
                             src={i} 
                             alt={'Name'}
+                            width="600" 
+                            height="400"
                             onClick={(i) => changeImg(i)}
                             onMouseEnter={(i) => updateTempImg(i)}
                             onMouseLeave={() => updateTempImg(null)}
