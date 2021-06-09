@@ -1,6 +1,6 @@
 .product-view-main {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -8,25 +8,26 @@
 
 .product-image-carosel {
   width: 40%;
-  height: max-content;
+  height: 60%;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2vw;
 }
 
 .product-description {
-  width: 40%;
+  width: 60%;
   height: 100%;
   position: relative;
+  padding: 2vw;
 }
 
 .display-image {
   width: 100%;
-  height: 40vh;
+  height: 100%;
   position: relative;
-  margin: 7% 0;
 }
 
 .product-rating {
@@ -39,8 +40,8 @@
 }
 
 .display-image img {
+  width: 100%;
   height: 100%;
-  width: auto;
   display: block;
   border-radius: 2vh;
   margin: 0 auto;
@@ -48,7 +49,8 @@
 
 .image-grid-container {
   width: 100%;
-  height: 8vh;
+  height: 10vh;
+  padding-top: 8%;
   position: relative;
   align-items: center;
 }
@@ -57,20 +59,20 @@
   display: grid;
   justify-content: center;
   grid-template-columns: auto auto auto auto auto;
-  grid-column-gap: 0.25vw;
+  grid-column-gap: 1vw;
 }
 
 .image-grid img {
-  height: 8vh;
-  width: auto;
+  width: 100%;
+  height: 100%;
   border: 2px solid #dadada;
-  border-radius: 7px;
+  border-radius: 1vh;
   margin: 0 auto;
 }
 
-.product-heading {
-  margin: 5% auto;
-}
+/* .product-heading {
+  padding: 5% auto;
+} */
 
 .product-heading h3 {
   font-size: 2vw;
@@ -88,7 +90,7 @@
 
 .product-description-table td {
   position: relative;
-  margin: 2vh;
+  padding: 0.5vh;
   padding-left: 3vw;
   font-size: 0.75vw;
 }
@@ -103,24 +105,20 @@
   }
 
   .display-image {
-    height: 60vw;
     border-radius: 2vw;
   }
 
   .product-image-carosel {
-    width: 100vw;
+    width: 90%;
+    padding: 5%;
   }
 
   .image-grid-container {
-    width: 100vw;
+    width: 90%;
   }
 
   .product-description {
     padding-left: 5vw;
-  }
-
-  .image-grid img {
-    height: 10vw;
   }
 
   .product-description {
