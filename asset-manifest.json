@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/product-view-page-horeka/static/css/main.c2766c82.chunk.css",
-    "main.js": "/product-view-page-horeka/static/js/main.1cdf1767.chunk.js",
-    "main.js.map": "/product-view-page-horeka/static/js/main.1cdf1767.chunk.js.map",
+    "main.css": "/product-view-page-horeka/static/css/main.69a6c345.chunk.css",
+    "main.js": "/product-view-page-horeka/static/js/main.eb5284da.chunk.js",
+    "main.js.map": "/product-view-page-horeka/static/js/main.eb5284da.chunk.js.map",
     "runtime-main.js": "/product-view-page-horeka/static/js/runtime-main.71e5c407.js",
     "runtime-main.js.map": "/product-view-page-horeka/static/js/runtime-main.71e5c407.js.map",
     "static/js/2.a38284b0.chunk.js": "/product-view-page-horeka/static/js/2.a38284b0.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.adf78473.chunk.js": "/product-view-page-horeka/static/js/3.adf78473.chunk.js",
     "static/js/3.adf78473.chunk.js.map": "/product-view-page-horeka/static/js/3.adf78473.chunk.js.map",
     "index.html": "/product-view-page-horeka/index.html",
-    "static/css/main.c2766c82.chunk.css.map": "/product-view-page-horeka/static/css/main.c2766c82.chunk.css.map",
+    "static/css/main.69a6c345.chunk.css.map": "/product-view-page-horeka/static/css/main.69a6c345.chunk.css.map",
     "static/js/2.a38284b0.chunk.js.LICENSE.txt": "/product-view-page-horeka/static/js/2.a38284b0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.71e5c407.js",
     "static/js/2.a38284b0.chunk.js",
-    "static/css/main.c2766c82.chunk.css",
-    "static/js/main.1cdf1767.chunk.js"
+    "static/css/main.69a6c345.chunk.css",
+    "static/js/main.eb5284da.chunk.js"
   ]
 }
