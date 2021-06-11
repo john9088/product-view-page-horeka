@@ -44,7 +44,7 @@ const ProductImageCarosel = ({data}) => {
         setImgGrid([
 
             ...images.map((i, index) => {
-                if(index === idx){
+                if(index === idx && idx < imgLength){
                     return(<img 
                         key={index} 
                         src={i} 
