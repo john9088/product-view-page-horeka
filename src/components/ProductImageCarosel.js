@@ -3,6 +3,13 @@ import ReactStars from "../components/react-stars";
 
 const ProductImageCarosel = ({data}) => {
     let images = data.images
+    const imgLength = data.imgLength
+    let dummyImg = data.dummyImg
+
+    if(imgLength < 5)
+        while(images.length !== 5)
+            images.push(dummyImg)
+
     const [selectedImg, setSelectedImg] = useState(images[0])
     const [tempImg, setTempImg] = useState(null)
     const [imgGrid, setImgGrid] = useState([
@@ -12,10 +19,8 @@ const ProductImageCarosel = ({data}) => {
                 key={index} 
                 src={i} 
                 alt={'Name'}
-                width="600" 
-                height="400"
                 onClick={(i) => changeImg(i,index)}
-                onMouseEnter={(i) => updateTempImg(i)}
+                onMouseEnter={(i) => updateTempImg(i,index)}
                 onMouseLeave={() => updateTempImg(null)}
                 style={{border:'None'}}
             />
@@ -23,12 +28,14 @@ const ProductImageCarosel = ({data}) => {
 
     ])
 
-    const updateTempImg = (img) => {
+    const updateTempImg = (img,idx) => {
         if (img !== null) {
-            let src = img.target.src
-            setTempImg(src)
-        }
+            if(idx < imgLength){
+                let src = img.target.src
+                setTempImg(src)
+            }
             
+        }
         else
             setTempImg(null)
     }
@@ -38,15 +45,12 @@ const ProductImageCarosel = ({data}) => {
 
             ...images.map((i, index) => {
                 if(index === idx){
-                    console.log(i.props)
                     return(<img 
                         key={index} 
                         src={i} 
                         alt={'Name'}
-                        width="600" 
-                        height="400"
                         onClick={(i) => changeImg(i,index)}
-                        onMouseEnter={(i) => updateTempImg(i)}
+                        onMouseEnter={(i) => updateTempImg(i,index)}
                         onMouseLeave={() => updateTempImg(null)}
                         style={{border:'3px solid #555'}}
                     />)
@@ -56,20 +60,19 @@ const ProductImageCarosel = ({data}) => {
                         key={index} 
                         src={i} 
                         alt={'Name'}
-                        width="600" 
-                        height="400"
                         onClick={(i) => changeImg(i,index)}
-                        onMouseEnter={(i) => updateTempImg(i)}
+                        onMouseEnter={(i) => updateTempImg(i,index)}
                         onMouseLeave={() => updateTempImg(null)}
                         style={{border:'None'}}
                     />)
 
             })
         ])
-        
-
-        let src = img.target.src
-        setSelectedImg(src)
+       
+        if(idx < imgLength){
+            let src = img.target.src
+            setSelectedImg(src)
+        }   
     }   
 
     return (
@@ -90,7 +93,7 @@ const ProductImageCarosel = ({data}) => {
             </div>
             </div>
             <div className='image-grid-container'>
-                <div className='image-grid'>
+                <div className='image-grid' style={{ gridTemplateColumns:'18% '.repeat(images.length) }}>
                     {[...imgGrid]} 
                 </div>
             </div>
